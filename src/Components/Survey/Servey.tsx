@@ -1,11 +1,6 @@
 import React from 'react';
-
-
 import usePolls, { Poll } from '../../Hook/use-polls';
 import PollCard from '../poll-card/poll-card';
-
-
-
 const HomePage: React.FC = () => {
   const { polls, pollsLoading, pollsError } = usePolls('active');
   return (
